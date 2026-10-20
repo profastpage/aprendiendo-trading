@@ -4,7 +4,7 @@ import React from "react";
 import { Check, X, ShieldAlert, Award, Gift, Zap, Users, MessageCircle } from "lucide-react";
 
 export default function WhyWithUs() {
-  const affiliateUrl = process.env.NEXT_PUBLIC_EXNESS_AFFILIATE_URL || "https://one.exness-track.com";
+  const affiliateUrl = process.env.NEXT_PUBLIC_EXNESS_AFFILIATE_URL || "https://one.exnessonelink.com/boarding/sign-up/303589/a/c_u52ofalqdu?lng=es";
 
   return (
     <section className="py-24 relative border-t border-white/5 bg-[#060911]">

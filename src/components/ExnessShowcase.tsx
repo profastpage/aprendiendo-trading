@@ -72,7 +72,7 @@ const instruments: Instrument[] = [
 ];
 
 export default function ExnessShowcase() {
-  const affiliateUrl = process.env.NEXT_PUBLIC_EXNESS_AFFILIATE_URL || "https://one.exness-track.com";
+  const affiliateUrl = process.env.NEXT_PUBLIC_EXNESS_AFFILIATE_URL || "https://one.exnessonelink.com/boarding/sign-up/303589/a/c_u52ofalqdu?lng=es";
 
   return (
     <section id="exness" className="py-28 relative overflow-hidden bg-gradient-to-b from-[#060911] via-[#090e1c] to-[#060911]">

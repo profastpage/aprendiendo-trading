@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import {
-  Sparkles,
+  Landmark,
   Menu,
   X,
   ArrowRight,
@@ -93,15 +93,15 @@ export default function Navbar({ onOpenCheckout, onScrollToExness }: NavbarProps
             
             {/* Brand Logo */}
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-400 via-amber-500 to-amber-700 flex items-center justify-center shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
-                <Sparkles className="w-5 h-5 text-black stroke-[2.5]" />
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-300 via-amber-500 to-amber-700 flex items-center justify-center shadow-lg shadow-amber-500/25 border border-amber-300/30 group-hover:scale-105 transition-transform">
+                <Landmark className="w-5 h-5 text-[#060911] stroke-[2.4]" />
               </div>
               <div>
                 <span className="text-lg sm:text-xl font-extrabold tracking-tight text-white flex items-center gap-1">
                   Aprendiendo<span className="text-amber-400">Trading</span>
                 </span>
-                <span className="text-[10px] tracking-widest uppercase text-gray-400 font-medium block -mt-1">
-                  Academia Institucional
+                <span className="text-[9px] tracking-[0.2em] uppercase text-gray-400 font-bold block -mt-1">
+                  OPERATIVA INSTITUCIONAL
                 </span>
               </div>
             </Link>
@@ -199,15 +199,15 @@ export default function Navbar({ onOpenCheckout, onScrollToExness }: NavbarProps
               {/* Drawer Header */}
               <div className="flex items-center justify-between pb-6 border-b border-white/10">
                 <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
-                    <Sparkles className="w-5 h-5 text-black stroke-[2.5]" />
+                  <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-300 via-amber-500 to-amber-700 flex items-center justify-center border border-amber-300/30">
+                    <Landmark className="w-5 h-5 text-[#060911] stroke-[2.4]" />
                   </div>
                   <div>
                     <span className="text-base font-extrabold text-white">
                       Aprendiendo<span className="text-amber-400">Trading</span>
                     </span>
-                    <span className="text-[9px] uppercase tracking-wider text-gray-400 block">
-                      Academia Institucional
+                    <span className="text-[8px] uppercase tracking-[0.2em] text-gray-400 font-bold block">
+                      OPERATIVA INSTITUCIONAL
                     </span>
                   </div>
                 </div>

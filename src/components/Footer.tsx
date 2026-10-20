@@ -2,10 +2,10 @@
 
 import React from "react";
 import Link from "next/link";
-import { Sparkles, ShieldCheck, AlertTriangle, ExternalLink } from "lucide-react";
+import { Landmark, ShieldCheck, AlertTriangle, ExternalLink } from "lucide-react";
 
 export default function Footer() {
-  const affiliateUrl = process.env.NEXT_PUBLIC_EXNESS_AFFILIATE_URL || "https://one.exness-track.com";
+  const affiliateUrl = process.env.NEXT_PUBLIC_EXNESS_AFFILIATE_URL || "https://one.exnessonelink.com/boarding/sign-up/303589/a/c_u52ofalqdu?lng=es";
 
   return (
     <footer className="bg-[#04060c] border-t border-white/5 text-gray-400 text-xs py-16">
@@ -17,12 +17,17 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-400 to-amber-700 flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-black stroke-[2.5]" />
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-300 via-amber-500 to-amber-700 flex items-center justify-center border border-amber-300/30">
+                <Landmark className="w-5 h-5 text-[#060911] stroke-[2.4]" />
               </div>
-              <span className="text-xl font-extrabold tracking-tight text-white">
-                Aprendiendo<span className="text-amber-400">Trading</span>.com
-              </span>
+              <div>
+                <span className="text-xl font-extrabold tracking-tight text-white block">
+                  Aprendiendo<span className="text-amber-400">Trading</span>
+                </span>
+                <span className="text-[8px] uppercase tracking-[0.2em] text-gray-400 font-bold block -mt-1">
+                  OPERATIVA INSTITUCIONAL
+                </span>
+              </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
               Academia institucional de análisis cuantitativo y operativa avanzada en Oro (XAU/USD). Formamos traders independientes con metodología de liquidez real.

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default function BrokerPage() {
-  const affiliateUrl = process.env.NEXT_PUBLIC_EXNESS_AFFILIATE_URL || "https://one.exness-track.com";
+  const affiliateUrl = process.env.NEXT_PUBLIC_EXNESS_AFFILIATE_URL || "https://one.exnessonelink.com/boarding/sign-up/303589/a/c_u52ofalqdu?lng=es";
 
   return (
     <main className="min-h-screen bg-[#060911] text-gray-100 flex flex-col">

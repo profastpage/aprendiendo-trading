@@ -22,7 +22,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://aprendiendotrading.com"),
   title: "Aprendiendo Trading | Academia Institucional & Especialistas en Oro (XAU/USD)",
-  description: "Aprende trading cuantitativo e institucional en Oro (XAU/USD). Curso completo por $99 USD, señales VIP y nuestro indicador oficial de reversión en Exness.",
+  description: "Domina el Oro con Smart Money y Liquidez Institucional. Formación profesional por $99 USD, hasta 1 año de Señales VIP en Exness y nuestro indicador oficial de reversión.",
   keywords: [
     "aprender trading",
     "curso de trading oro",
@@ -34,24 +34,39 @@ export const metadata: Metadata = {
     "estrategia oro m5 m15",
     "aprendiendo trading"
   ],
-  authors: [{ name: "Aprendiendo Trading Academy", url: "https://aprendiendotrading.com" }],
+  authors: [{ name: "Aprendiendo Trading", url: "https://aprendiendotrading.com" }],
   creator: "FastPagePro",
   publisher: "Aprendiendo Trading",
   alternates: {
     canonical: "https://aprendiendotrading.com",
+    languages: {
+      "es-ES": "https://aprendiendotrading.com",
+      "es-419": "https://aprendiendotrading.com",
+    },
   },
   openGraph: {
     title: "Aprendiendo Trading — Domina el Oro con Smart Money",
-    description: "Curso profesional de Oro ($99 USD) + Señales VIP en Exness + Indicador exclusivo.",
+    description: "Formación profesional por $99 USD, hasta 1 año de Señales VIP en Exness y nuestro indicador oficial de reversión.",
     url: "https://aprendiendotrading.com",
     siteName: "Aprendiendo Trading",
     locale: "es_LA",
     type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Aprendiendo Trading — Academia Institucional en Oro XAU/USD",
+        type: "image/jpeg",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aprendiendo Trading | Especialistas en Oro",
-    description: "Curso profesional $99 USD y Señales VIP en Exness.",
+    title: "Aprendiendo Trading — Especialistas en Oro (XAU/USD)",
+    description: "Domina el Oro con Smart Money y Liquidez Institucional. Curso $99 USD y Señales VIP en Exness.",
+    images: ["/og-image.jpg"],
+    creator: "@aprendiendotrading",
   },
   robots: {
     index: true,
@@ -81,6 +96,7 @@ export default function RootLayout({
         "name": "Aprendiendo Trading",
         "url": "https://aprendiendotrading.com",
         "logo": "https://aprendiendotrading.com/favicon.ico",
+        "image": "https://aprendiendotrading.com/og-image.jpg",
         "description": "Academia institucional de formación en trading de Oro (XAU/USD) y análisis cuantitativo.",
         "sameAs": [
           "https://www.exness.com"

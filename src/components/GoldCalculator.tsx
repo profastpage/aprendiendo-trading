@@ -2,12 +2,42 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Calculator, DollarSign, Target, Shield, ArrowUpRight, Sparkles } from "lucide-react";
+import { Calculator, DollarSign, Target, Shield, ArrowUpRight, Sparkles, RefreshCw, CheckCircle2 } from "lucide-react";
 
 export default function GoldCalculator() {
   const [balance, setBalance] = useState<number>(600);
-  const [lotSize, setLotSize] = useState<number>(0.05);
+  
+  // Rule: 0.01 lots per $150 USD of balance (safe institutional guideline)
+  const calculateRecommendedLot = (bal: number) => {
+    const raw = (bal / 150) * 0.01;
+    return Math.max(0.01, Math.min(0.50, Math.round(raw * 100) / 100));
+  };
+
+  const [lotSize, setLotSize] = useState<number>(calculateRecommendedLot(600));
+  const [isAutoLot, setIsAutoLot] = useState<boolean>(true);
   const [pipsTarget, setPipsTarget] = useState<number>(50);
+
+  // When balance changes: auto-update lot size if in auto mode
+  const handleBalanceChange = (newBalance: number) => {
+    setBalance(newBalance);
+    if (isAutoLot) {
+      setLotSize(calculateRecommendedLot(newBalance));
+    }
+  };
+
+  const handleLotChange = (newLot: number) => {
+    setLotSize(newLot);
+    // If user manually changes it, disable pure auto mode until reset
+    const rec = calculateRecommendedLot(balance);
+    if (Math.abs(newLot - rec) > 0.005) {
+      setIsAutoLot(false);
+    }
+  };
+
+  const resetToRecommended = () => {
+    setLotSize(calculateRecommendedLot(balance));
+    setIsAutoLot(true);
+  };
 
   // In XAU/USD: 1 standard lot = 100 oz.
   // 1 pip in Gold = $0.10 price movement = $10 per 1.00 lot.
@@ -16,7 +46,18 @@ export default function GoldCalculator() {
   
   // Stop loss standard: 30 pips
   const riskAmount = lotSize * 30 * 10;
-  const riskPercentage = ((riskAmount / balance) * 100).toFixed(1);
+  const riskPercentage = Number(((riskAmount / balance) * 100).toFixed(1));
+
+  // Risk profile tag
+  let riskBadgeColor = "text-emerald-400 bg-emerald-500/10 border-emerald-500/30";
+  let riskProfileText = "Conservador (Institucional)";
+  if (riskPercentage > 3.0 && riskPercentage <= 5.0) {
+    riskBadgeColor = "text-amber-400 bg-amber-500/10 border-amber-500/30";
+    riskProfileText = "Moderado";
+  } else if (riskPercentage > 5.0) {
+    riskBadgeColor = "text-red-400 bg-red-500/10 border-red-500/30";
+    riskProfileText = "Agresivo / Alto Riesgo";
+  }
 
   // Monthly projection assuming 20 trading days, 70% winrate (14 wins, 6 losses)
   const monthlyProfit = (14 * profitPerTrade) - (6 * riskAmount);
@@ -29,13 +70,13 @@ export default function GoldCalculator() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="text-xs font-mono uppercase tracking-widest text-amber-400 block mb-2">
-            HERRAMIENTA CUANTITATIVA INTERACTIVA
+            HERRAMIENTA CUANTITATIVA INSTITUCIONAL
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
             Simulador de Rendimiento en <span className="gold-text-gradient">XAU/USD</span>
           </h2>
           <p className="mt-4 text-gray-400 text-base sm:text-lg">
-            Calcula exactamente cuánto puedes generar operando Oro con una gestión matemática sin sobreapalancar tu cuenta.
+            Ajusta el capital de tu cuenta y observa cómo se calcula automáticamente el lotaje institucional recomendado para proteger tu margen en Oro.
           </p>
         </div>
 
@@ -61,23 +102,38 @@ export default function GoldCalculator() {
                 max="5000"
                 step="50"
                 value={balance}
-                onChange={(e) => setBalance(Number(e.target.value))}
+                onChange={(e) => handleBalanceChange(Number(e.target.value))}
                 className="w-full h-2 bg-white/10 rounded-lg appearance-none cursor-pointer accent-amber-500"
               />
               <div className="flex justify-between text-[11px] text-gray-400">
-                <span>$100 (Micro)</span>
+                <span>$100 (Starter)</span>
                 <span>$600 (Recomendado en Exness)</span>
-                <span>$5,000 (Pro)</span>
+                <span>$5,000 (Institucional)</span>
               </div>
             </div>
 
-            {/* Slider 2: Lot Size */}
+            {/* Slider 2: Lot Size (Auto-Synchronized) */}
             <div className="space-y-2">
               <div className="flex justify-between items-center">
-                <label htmlFor="lotsize-input" className="text-sm font-semibold text-gray-200 flex items-center gap-2">
-                  <Shield className="w-4 h-4 text-emerald-400" />
-                  Lotaje por Operación (Oro)
-                </label>
+                <div className="flex items-center gap-2">
+                  <label htmlFor="lotsize-input" className="text-sm font-semibold text-gray-200 flex items-center gap-2">
+                    <Shield className="w-4 h-4 text-emerald-400" />
+                    Lotaje por Operación (Oro)
+                  </label>
+                  {isAutoLot ? (
+                    <span className="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full flex items-center gap-1">
+                      <CheckCircle2 className="w-3 h-3" /> Auto
+                    </span>
+                  ) : (
+                    <button
+                      onClick={resetToRecommended}
+                      className="text-[10px] font-mono text-amber-300 hover:text-white bg-amber-500/10 border border-amber-500/20 px-2 py-0.5 rounded-full flex items-center gap-1 cursor-pointer transition-colors"
+                      title="Restablecer al lotaje institucional recomendado"
+                    >
+                      <RefreshCw className="w-2.5 h-2.5" /> Ajustar a sugerido
+                    </button>
+                  )}
+                </div>
                 <span className="text-xl font-mono font-bold text-emerald-400">{lotSize.toFixed(2)} Lotes</span>
               </div>
               <input
@@ -87,13 +143,13 @@ export default function GoldCalculator() {
                 max="0.50"
                 step="0.01"
                 value={lotSize}
-                onChange={(e) => setLotSize(Number(e.target.value))}
+                onChange={(e) => handleLotChange(Number(e.target.value))}
                 className="w-full h-2 bg-white/10 rounded-lg appearance-none cursor-pointer accent-emerald-500"
               />
               <div className="flex justify-between text-[11px] text-gray-400">
                 <span>0.01 (Seguro)</span>
-                <span>0.05 (Ideal $600)</span>
-                <span>0.50 (Avanzado)</span>
+                <span>Sugerido: {calculateRecommendedLot(balance).toFixed(2)}</span>
+                <span>0.50 (Máximo)</span>
               </div>
             </div>
 
@@ -123,9 +179,18 @@ export default function GoldCalculator() {
               </div>
             </div>
 
-            <p className="text-xs text-gray-400 leading-relaxed border-l-2 border-amber-500/40 pl-3">
-              💡 <strong>Regla Institucional:</strong> En cuentas de $600 USD, 0.05 lotes arriesga menos del 2.5% por operación con un beneficio estimado de <strong>+$25.00 a +$40.00 USD</strong> por trade.
-            </p>
+            {/* Informational Callout */}
+            <div className="p-4 rounded-2xl bg-[#090e1c] border border-white/5 space-y-1.5 text-xs text-gray-400">
+              <div className="flex items-center justify-between">
+                <span className="text-gray-300 font-semibold">Perfil de Riesgo por Trade:</span>
+                <span className={`px-2.5 py-0.5 rounded-full border text-[11px] font-bold font-mono ${riskBadgeColor}`}>
+                  {riskProfileText}
+                </span>
+              </div>
+              <p className="text-[11px] leading-relaxed">
+                💡 <strong>Regla Institucional:</strong> El lotaje se calibra automáticamente a razón de <strong>0.01 lotes por cada $150 USD de balance</strong>, garantizando que un Stop Loss estándar de 30 pips no comprometa más del 2% de tu cuenta.
+              </p>
+            </div>
 
           </div>
 
@@ -136,7 +201,7 @@ export default function GoldCalculator() {
                 <Sparkles className="w-4 h-4" />
                 Métricas Calculadas
               </span>
-              <span className="text-[10px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full font-mono font-bold">
+              <span className="text-[10px] text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full font-mono font-bold">
                 Riesgo 1:3
               </span>
             </div>
@@ -180,7 +245,7 @@ export default function GoldCalculator() {
               href="/broker"
               className="w-full py-3.5 px-4 rounded-full font-bold text-xs text-black bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 flex items-center justify-center gap-1.5 transition-all text-center"
             >
-              Abrir Cuenta Exness con 3 Meses VIP Gratis
+              Abrir Cuenta Exness con Planes VIP Gratis
               <ArrowUpRight className="w-4 h-4" />
             </Link>
 
