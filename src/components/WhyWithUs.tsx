@@ -64,15 +64,15 @@ export default function WhyWithUs() {
           </div>
 
           {/* Column 2: Registrarse con AprendiendoTrading */}
-          <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-b from-[#0f172a] to-[#0a0f1e] border-2 border-amber-500/40 space-y-6 flex flex-col justify-between shadow-2xl relative overflow-hidden">
+          <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-b from-[#0f172a] to-[#0a0f1e] border-2 border-[#dfb76c]/50 space-y-6 flex flex-col justify-between shadow-2xl relative overflow-hidden">
             
-            <div className="absolute top-0 right-0 bg-gradient-to-l from-amber-400 to-amber-600 text-black text-[10px] font-black uppercase tracking-wider px-4 py-1.5 rounded-bl-xl shadow-md">
+            <div className="absolute top-0 right-0 gold-btn-gradient text-[#060911] text-[10px] font-black uppercase tracking-wider px-4 py-1.5 rounded-bl-xl shadow-md">
               ALIANZA VIP
             </div>
 
             <div>
               <div className="flex items-center justify-between pb-4 border-b border-white/10">
-                <span className="text-sm font-bold text-amber-300 uppercase tracking-wider">
+                <span className="text-sm font-bold text-[#dfb76c] uppercase tracking-wider">
                   Bajo nuestro enlace de Academia
                 </span>
                 <span className="text-xs text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full font-semibold">
@@ -83,7 +83,7 @@ export default function WhyWithUs() {
               <ul className="mt-6 space-y-4 text-xs sm:text-sm text-gray-200">
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
-                  <span><strong>3 Meses de Señales VIP Gratis:</strong> Envíos en vivo de entradas en Oro con SL y TPs (ahorras $150 USD).</span>
+                  <span><strong>Operativa en Tiempo Real por Telegram:</strong> Alertas precisas en Oro con Stop Loss estructural (50 a 100 pips para resistir el ruido) y recogida metódica de parciales a Breakeven (ahorras hasta $600 USD).</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
@@ -91,11 +91,11 @@ export default function WhyWithUs() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
-                  <span><strong>Soporte Prioritario por WhatsApp:</strong> Asistencia directa de nuestro equipo para configuración y fondeo.</span>
+                  <span><strong>Video-Tutoriales de Copia y Ejecución:</strong> Guías paso a paso para copiar señales en 5 segundos y abrir operaciones desde el terminal de Exness sin fallos.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
-                  <span><strong>Comunidad Privada de Nueva York:</strong> Sesiones de análisis pre-mercado para miembros de la alianza.</span>
+                  <span><strong>Soporte Prioritario por WhatsApp:</strong> Asistencia directa 1-a-1 de nuestro equipo para configuración, verificación (KYC) y retiros rápidos.</span>
                 </li>
               </ul>
             </div>
@@ -105,7 +105,7 @@ export default function WhyWithUs() {
                 href={affiliateUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-4 rounded-full font-black text-sm text-black bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 shadow-xl shadow-amber-500/25 flex items-center justify-center gap-2 transition-all text-center"
+                className="w-full py-4 rounded-full font-black text-sm text-[#060911] gold-btn-gradient shadow-xl shadow-[#dfb76c]/25 flex items-center justify-center gap-2 transition-all text-center"
               >
                 Vincular mi Cuenta y Activar Beneficios
               </a>

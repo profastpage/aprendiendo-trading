@@ -243,7 +243,7 @@ export default function GoldCalculator() {
 
             <Link
               href="/broker"
-              className="w-full py-3.5 px-4 rounded-full font-bold text-xs text-black bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 flex items-center justify-center gap-1.5 transition-all text-center"
+              className="w-full py-3.5 px-4 rounded-full font-bold text-xs text-[#060911] gold-btn-gradient shadow-md shadow-[#dfb76c]/20 flex items-center justify-center gap-1.5 transition-all text-center"
             >
               Abrir Cuenta Exness con Planes VIP Gratis
               <ArrowUpRight className="w-4 h-4" />

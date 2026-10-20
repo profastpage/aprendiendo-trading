@@ -164,7 +164,11 @@ export default function ExnessShowcase() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                    <span>Guía de configuración en Exness.</span>
+                    <span>Tutoriales en video para copiar alertas y operar en Exness.</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                    <span>Soporte por WhatsApp para activación.</span>
                   </li>
                 </ul>
               </div>
@@ -182,14 +186,14 @@ export default function ExnessShowcase() {
             </div>
 
             {/* Tier 2: Trader Pro */}
-            <div className="p-8 rounded-3xl bg-[#0d1428] border border-amber-500/30 flex flex-col justify-between space-y-6 relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-black text-[10px] font-black uppercase tracking-wider px-3.5 py-1 rounded-full shadow-md">
+            <div className="p-8 rounded-3xl bg-[#0d1428] border border-[#dfb76c]/40 flex flex-col justify-between space-y-6 relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#dfb76c] text-[#060911] text-[10px] font-black uppercase tracking-wider px-3.5 py-1 rounded-full shadow-md">
                 RECOMENDADO
               </div>
 
               <div>
                 <div className="flex justify-between items-center pb-4 border-b border-white/10">
-                  <span className="text-xs font-mono uppercase tracking-wider text-amber-300 font-bold">
+                  <span className="text-xs font-mono uppercase tracking-wider text-[#dfb76c] font-bold">
                     NIVEL TRADER PRO
                   </span>
                   <span className="text-xs text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded font-bold">
@@ -199,7 +203,7 @@ export default function ExnessShowcase() {
 
                 <div className="mt-6 mb-4">
                   <span className="text-xs text-gray-400 block">Depósito Inicial Recomendado:</span>
-                  <div className="text-3xl sm:text-4xl font-mono font-black text-amber-400">
+                  <div className="text-3xl sm:text-4xl font-mono font-black text-[#dfb76c]">
                     $250 <span className="text-sm font-sans font-normal text-gray-300">USD</span>
                   </div>
                   <span className="text-[11px] text-emerald-400 block mt-1">Margen óptimo para operar Oro</span>
@@ -216,11 +220,11 @@ export default function ExnessShowcase() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                    <span>Acceso a sesiones grupales de Nueva York.</span>
+                    <span>Tutoriales en video para copiar operaciones en 5 segundos.</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                    <span>Soporte prioritario por WhatsApp.</span>
+                    <span>Soporte prioritario 1-a-1 por WhatsApp.</span>
                   </li>
                 </ul>
               </div>
@@ -230,7 +234,7 @@ export default function ExnessShowcase() {
                   href={affiliateUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3.5 rounded-full font-bold text-xs text-black bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 shadow-md shadow-amber-500/20 flex items-center justify-center gap-2 transition-all text-center"
+                  className="w-full py-3.5 rounded-full font-bold text-xs text-[#060911] gold-btn-gradient shadow-md shadow-[#dfb76c]/20 flex items-center justify-center gap-2 transition-all text-center"
                 >
                   Fondea $250 y Activa 4 Meses
                 </a>
@@ -238,25 +242,25 @@ export default function ExnessShowcase() {
             </div>
 
             {/* Tier 3: Ballena / Institucional (1 AÑO) */}
-            <div className="p-8 rounded-3xl bg-gradient-to-b from-[#18233c] to-[#0c1222] border-2 border-amber-400 flex flex-col justify-between space-y-6 relative shadow-2xl">
-              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-yellow-400 to-amber-500 text-black text-[10px] font-black uppercase tracking-wider px-4 py-1 rounded-full shadow-lg flex items-center gap-1">
+            <div className="p-8 rounded-3xl bg-gradient-to-b from-[#18233c] to-[#0c1222] border-2 border-[#dfb76c] flex flex-col justify-between space-y-6 relative shadow-2xl">
+              <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 gold-btn-gradient text-[#060911] text-[10px] font-black uppercase tracking-wider px-4 py-1 rounded-full shadow-lg flex items-center gap-1">
                 <Star className="w-3 h-3 fill-black" />
                 MÁXIMO VALOR (1 AÑO)
               </div>
 
               <div>
                 <div className="flex justify-between items-center pb-4 border-b border-white/10">
-                  <span className="text-xs font-mono uppercase tracking-wider text-amber-300 font-extrabold">
+                  <span className="text-xs font-mono uppercase tracking-wider text-[#dfb76c] font-extrabold">
                     NIVEL INSTITUCIONAL
                   </span>
-                  <span className="text-xs text-amber-300 bg-amber-400/20 px-2 py-0.5 rounded font-black">
+                  <span className="text-xs text-[#dfb76c] bg-[#dfb76c]/20 px-2 py-0.5 rounded font-black">
                     1 AÑO COMPLETO
                   </span>
                 </div>
 
                 <div className="mt-6 mb-4">
                   <span className="text-xs text-gray-300 block font-medium">Depósito Institucional:</span>
-                  <div className="text-3xl sm:text-4xl font-mono font-black text-amber-300">
+                  <div className="text-3xl sm:text-4xl font-mono font-black text-[#dfb76c]">
                     $700 <span className="text-sm font-sans font-normal text-gray-300">USD+</span>
                   </div>
                   <span className="text-[11px] text-emerald-400 block mt-1 font-semibold">
@@ -266,20 +270,20 @@ export default function ExnessShowcase() {
 
                 <ul className="space-y-3 text-xs text-white">
                   <li className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                    <Check className="w-4 h-4 text-[#dfb76c] flex-shrink-0" />
                     <span><strong>1 AÑO Completo de Señales VIP de Oro</strong> sin pagar mensualidad.</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                    <Check className="w-4 h-4 text-[#dfb76c] flex-shrink-0" />
                     <span>Indicador Oficial de por vida en tu WebTerminal.</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                    <span>Acompañamiento VIP 1-a-1 por WhatsApp directo.</span>
+                    <Check className="w-4 h-4 text-[#dfb76c] flex-shrink-0" />
+                    <span>Tutoriales exclusivos de ejecución y copia milimétrica.</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                    <span>Plantillas institucionales para TradingView.</span>
+                    <Check className="w-4 h-4 text-[#dfb76c] flex-shrink-0" />
+                    <span>Acompañamiento VIP 1-a-1 por WhatsApp directo.</span>
                   </li>
                 </ul>
               </div>
@@ -289,7 +293,7 @@ export default function ExnessShowcase() {
                   href={affiliateUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-4 rounded-full font-black text-xs text-black bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-yellow-300 hover:to-amber-400 shadow-xl shadow-amber-500/30 flex items-center justify-center gap-2 transition-all text-center"
+                  className="w-full py-4 rounded-full font-black text-xs text-[#060911] gold-btn-gradient shadow-xl shadow-[#dfb76c]/30 flex items-center justify-center gap-2 transition-all text-center"
                 >
                   Fondea $700+ y Recibe 1 Año VIP Gratis
                 </a>

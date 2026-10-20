@@ -147,7 +147,7 @@ export default function Navbar({ onOpenCheckout, onScrollToExness }: NavbarProps
               {onOpenCheckout ? (
                 <button
                   onClick={onOpenCheckout}
-                  className="text-xs px-5 py-2.5 rounded-full font-bold text-black bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 shadow-md shadow-amber-500/25 transition-all transform hover:-translate-y-0.5 flex items-center gap-1.5 cursor-pointer"
+                  className="text-xs px-5 py-2.5 rounded-full font-bold text-[#060911] gold-btn-gradient shadow-md shadow-[#dfb76c]/20 transition-all transform hover:-translate-y-0.5 flex items-center gap-1.5 cursor-pointer"
                 >
                   Comprar Curso ($99)
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -155,7 +155,7 @@ export default function Navbar({ onOpenCheckout, onScrollToExness }: NavbarProps
               ) : (
                 <Link
                   href="/curso"
-                  className="text-xs px-5 py-2.5 rounded-full font-bold text-black bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 shadow-md shadow-amber-500/25 transition-all transform hover:-translate-y-0.5 flex items-center gap-1.5"
+                  className="text-xs px-5 py-2.5 rounded-full font-bold text-[#060911] gold-btn-gradient shadow-md shadow-[#dfb76c]/20 transition-all transform hover:-translate-y-0.5 flex items-center gap-1.5"
                 >
                   Comprar Curso ($99)
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -288,7 +288,7 @@ export default function Navbar({ onOpenCheckout, onScrollToExness }: NavbarProps
                   closeDrawer();
                   if (onOpenCheckout) onOpenCheckout();
                 }}
-                className="w-full py-4 rounded-2xl font-black text-sm text-black bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 shadow-xl shadow-amber-500/30 flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full py-4 rounded-2xl font-black text-sm text-[#060911] gold-btn-gradient shadow-xl shadow-[#dfb76c]/25 flex items-center justify-center gap-2 cursor-pointer"
               >
                 Comprar Curso — $99 USD
                 <ArrowRight className="w-4 h-4" />
@@ -297,7 +297,7 @@ export default function Navbar({ onOpenCheckout, onScrollToExness }: NavbarProps
               <Link
                 href="/broker"
                 onClick={closeDrawer}
-                className="w-full py-3 rounded-2xl font-bold text-xs text-amber-300 border border-amber-500/30 text-center block hover:bg-amber-500/10 transition-colors"
+                className="w-full py-3 rounded-2xl font-bold text-xs text-[#dfb76c] border border-[#dfb76c]/30 text-center block hover:bg-[#dfb76c]/10 transition-colors"
               >
                 Ver Planes VIP de Exness
               </Link>

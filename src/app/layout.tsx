@@ -37,6 +37,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Aprendiendo Trading", url: "https://aprendiendotrading.com" }],
   creator: "FastPagePro",
   publisher: "Aprendiendo Trading",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/icon.svg",
+  },
   alternates: {
     canonical: "https://aprendiendotrading.com",
     languages: {

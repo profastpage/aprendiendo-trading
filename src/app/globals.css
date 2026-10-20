@@ -3,8 +3,8 @@
 :root {
   --background: #060911;
   --foreground: #f3f4f6;
-  --gold-primary: #f59e0b;
-  --gold-secondary: #fbbf24;
+  --gold-primary: #dfb76c;
+  --gold-secondary: #f3e2ba;
 }
 
 html {
@@ -20,23 +20,34 @@ body {
   overflow-x: clip;
 }
 
-/* Subtle glow accents without boxy borders */
+/* Subtle glow accents with champagne gold */
 .subtle-glow {
-  background: radial-gradient(ellipse at center, rgba(245, 158, 11, 0.12) 0%, rgba(6, 9, 17, 0) 70%);
+  background: radial-gradient(ellipse at center, rgba(223, 183, 108, 0.12) 0%, rgba(6, 9, 17, 0) 70%);
 }
 
 .emerald-glow {
   background: radial-gradient(ellipse at center, rgba(16, 185, 129, 0.12) 0%, rgba(6, 9, 17, 0) 70%);
 }
 
+/* Luxury Swiss Champagne Gold Text Gradient */
 .gold-text-gradient {
-  background: linear-gradient(135deg, #ffffff 0%, #fef3c7 25%, #f59e0b 70%, #d97706 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #f9f1df 25%, #dfb76c 70%, #b88a38 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* Luxury Champagne Gold Button */
+.gold-btn-gradient {
+  background: linear-gradient(135deg, #f5e6c4 0%, #dfb76c 50%, #c49641 100%);
+  color: #060911;
+}
+
+.gold-btn-gradient:hover {
+  background: linear-gradient(135deg, #faf0da 0%, #e8c582 50%, #d4a753 100%);
+}
+
 .fastpagepro-gold {
-  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%);
+  background: linear-gradient(135deg, #faf0da 0%, #dfb76c 50%, #b88a38 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;

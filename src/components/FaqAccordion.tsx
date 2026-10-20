@@ -18,12 +18,12 @@ const faqs: FaqItem[] = [
     answer: "Incluye acceso de por vida a los 4 módulos completos del curso Gold Sniper Pro en video HD, actualizaciones futuras sin costo adicional, plantillas de análisis para TradingView y el código fuente de nuestro indicador institucional exclusivo para Exness WebTerminal."
   },
   {
-    question: "¿Cómo obtengo los 3 meses GRATIS del Canal VIP de Señales de Oro?",
-    answer: "Una vez inscrito en el curso, te registras en Exness a través de nuestro enlace oficial de academia o introduces nuestro código de partner. Luego fondeas tu cuenta de trading con un mínimo de $150 USD (o $600 USD para margen óptimo de Oro). Envías tu ID de cuenta a nuestro soporte y te activamos 3 meses completos de señales en vivo y el indicador oficial."
+    question: "¿Cómo obtengo hasta 1 AÑO GRATIS del Canal VIP de Señales de Oro en Exness?",
+    answer: "Te registras en Exness a través de nuestro enlace oficial de academia. Según el capital que deposites en tu propia cuenta para operar, te activamos tu acceso VIP de cortesía: con $100 USD recibes 2 meses VIP gratis; con $250 USD recibes 4 meses VIP gratis; y con $700 USD obtienes 1 año completo de señales VIP gratis (ahorrando $600 USD). El dinero depositado es 100% tuyo para operar y retirar cuando desees."
   },
   {
-    question: "¿Qué ocurre después de que terminen los 3 meses gratis de señales?",
-    answer: "A partir del mes 4, puedes continuar recibiendo las señales VIP en vivo y los directos de operativa mediante una suscripción accesible de $50 USD al mes. Si decides no renovar, conservas de todas formas el curso y tu indicador de Exness de por vida."
+    question: "¿Qué ocurre después de que termine mi periodo gratis de señales?",
+    answer: "Al finalizar tus meses gratis, puedes continuar recibiendo las señales VIP en vivo mediante una suscripción accesible de $50 USD al mes. Si decides no renovar, conservas de todas formas el curso y tu indicador de Exness de por vida."
   },
   {
     question: "¿Por qué recomiendan Exness en lugar de otros brokers?",
@@ -35,7 +35,7 @@ const faqs: FaqItem[] = [
   },
   {
     question: "¿Qué garantía tengo de que el método funciona?",
-    answer: "No vendemos promesas mágicas de hacerme millonario en 3 días. Enseñamos la gestión matemática institucional: si arriesgas 1 para ganar 3, con una tasa de aciertos auditada del 70%, tu capital crece con consistencia matemática sin poner en riesgo tu cuenta."
+    answer: "No vendemos promesas mágicas ni fórmulas milagrosas. Operamos con gestión cuantitativa real: usamos Stop Loss con margen estructural (50 a 100 pips) para evitar que los barridos de volatilidad del Oro quiebren la posición, aseguramos el 50% de ganancia en el primer impulso y movemos el resto a Breakeven. Esto te permite crecer con consistencia matemática sin arriesgar tu cuenta."
   }
 ];
 

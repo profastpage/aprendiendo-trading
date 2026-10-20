@@ -10,7 +10,7 @@ import { Award, ExternalLink, BarChart2 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Condiciones Bróker Exness & Señales VIP | Aprendiendo Trading",
-  description: "Conoce las ventajas institucionales de operar con Exness: Spreads bajos en Oro, retiros automáticos en segundos, trading sin swap y soporte 24/7. 3 Meses VIP gratis con nuestra academia.",
+  description: "Conoce las ventajas institucionales de operar con Exness: Spreads bajos en Oro, retiros automáticos en segundos, trading sin swap y soporte 24/7. Hasta 1 Año VIP gratis con nuestra academia.",
 };
 
 export default function BrokerPage() {
@@ -42,7 +42,7 @@ export default function BrokerPage() {
               href={affiliateUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 rounded-full font-extrabold text-sm text-black bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 shadow-xl shadow-amber-500/25 flex items-center gap-2 transition-all"
+              className="px-8 py-4 rounded-full font-extrabold text-sm text-[#060911] gold-btn-gradient shadow-xl shadow-[#dfb76c]/25 flex items-center gap-2 transition-all"
             >
               Abrir Cuenta en Exness
               <ExternalLink className="w-4 h-4" />

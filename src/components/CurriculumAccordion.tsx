@@ -2,7 +2,8 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { BookOpen, ChevronDown, CheckCircle, Clock, Video, Download, Sparkles, ArrowRight } from "lucide-react";
+import { BookOpen, ChevronDown, CheckCircle, Clock, Video, Download, Sparkles, ArrowRight, FileText } from "lucide-react";
+import FichaTecnicaModal from "@/components/FichaTecnicaModal";
 
 interface ModuleData {
   id: number;
@@ -100,6 +101,7 @@ interface CurriculumProps {
 
 export default function CurriculumAccordion({ onOpenCheckout }: CurriculumProps) {
   const [openModule, setOpenModule] = useState<number | null>(1);
+  const [fichaOpen, setFichaOpen] = useState(false);
 
   const toggleModule = (id: number) => {
     setOpenModule(openModule === id ? null : id);
@@ -193,7 +195,7 @@ export default function CurriculumAccordion({ onOpenCheckout }: CurriculumProps)
         <div className="mt-14 flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 border-t border-white/10">
           <div>
             <div className="text-xl font-bold text-white">¿Listo para dominar el Oro?</div>
-            <div className="text-xs text-gray-400">Pago único de $99 USD • Acceso vitalicio • 3 Meses VIP en Exness</div>
+            <div className="text-xs text-gray-400">Pago único de $99 USD • Acceso vitalicio • Hasta 1 Año VIP en Exness</div>
           </div>
 
           <div className="flex items-center gap-3">
@@ -205,17 +207,24 @@ export default function CurriculumAccordion({ onOpenCheckout }: CurriculumProps)
                 Inscribirme Ahora ($99 USD)
               </button>
             )}
-            <Link
-              href="/curso"
-              className="px-6 py-3.5 rounded-full font-semibold text-sm text-gray-300 hover:text-white border border-white/10 hover:border-white/20 flex items-center gap-1.5"
+            <button
+              onClick={() => setFichaOpen(true)}
+              className="px-6 py-3.5 rounded-full font-semibold text-sm text-gray-200 hover:text-white border border-[#dfb76c]/40 hover:border-[#dfb76c]/70 hover:bg-[#dfb76c]/10 flex items-center gap-2 transition-all cursor-pointer shadow-sm"
             >
+              <FileText className="w-4 h-4 text-[#dfb76c]" />
               Ver Ficha Técnica Completa
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+            </button>
           </div>
         </div>
 
       </div>
+
+      {/* Interactive Ficha Técnica Modal */}
+      <FichaTecnicaModal
+        isOpen={fichaOpen}
+        onClose={() => setFichaOpen(false)}
+        onOpenCheckout={onOpenCheckout}
+      />
     </section>
   );
 }

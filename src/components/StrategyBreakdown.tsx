@@ -65,20 +65,20 @@ export default function StrategyBreakdown() {
 
           {/* Pillar 3 */}
           <div className="space-y-4 group">
-            <div className="w-12 h-12 rounded-2xl bg-yellow-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-              <RefreshCw className="w-6 h-6 text-yellow-400" />
+            <div className="w-12 h-12 rounded-2xl bg-[#dfb76c]/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <RefreshCw className="w-6 h-6 text-[#dfb76c]" />
             </div>
             <div className="flex items-center justify-between">
               <h3 className="text-xl font-bold text-white tracking-tight">
-                3. Regla del 50%
+                3. Margen Estructural & Parciales
               </h3>
-              <span className="text-[11px] text-yellow-400 font-mono font-bold">MATEMÁTICA</span>
+              <span className="text-[11px] text-[#dfb76c] font-mono font-bold">50-100 PIPS</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              En Oro las reversas son agresivas. A los 50 pips cerramos automáticamente la mitad del lote y movemos el Stop Loss al precio de entrada más spread (Breakeven).
+              El Oro necesita espacio para respirar. Usamos Stop Loss estructural de 50 a 100 pips para evitar que el ruido institucional quiebre la posición, recogemos el 50% de ganancia en el primer impulso y movemos el resto a Breakeven.
             </p>
-            <div className="pt-2 text-xs text-yellow-300 font-medium">
-              🛡️ <strong>Riesgo Cero:</strong> Pase lo que pase después, la operación ya generó beneficio y tu capital queda blindado al 100%.
+            <div className="pt-2 text-xs text-[#dfb76c] font-medium">
+              🛡️ <strong>Riesgo Cero:</strong> Pase lo que pase después, la operación ya es rentable y tu cuenta queda 100% blindada.
             </div>
           </div>
 

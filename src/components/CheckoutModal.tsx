@@ -60,7 +60,7 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
                 Inscripción Oficial <span className="gold-text-gradient">Gold Sniper Pro</span>
               </h3>
               <p className="mt-1 text-sm text-gray-300">
-                Curso completo institucional + Indicador para Exness + Opción de 3 meses de Señales VIP gratis.
+                Curso completo institucional + Indicador para Exness + Opción de hasta 1 año de Señales VIP gratis.
               </p>
             </div>
 
@@ -222,7 +222,7 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 rounded-xl font-extrabold text-base text-black bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-300 hover:to-amber-500 shadow-xl shadow-amber-500/30 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
+                  className="w-full py-4 rounded-xl font-extrabold text-base text-[#060911] gold-btn-gradient shadow-xl shadow-[#dfb76c]/25 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
                 >
                   {isSubmitting ? (
                     <span className="flex items-center gap-2">
@@ -243,6 +243,18 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
                 <span>Encriptación SSL 256-bit • Garantía de satisfacción 100%</span>
               </div>
 
+              <div className="text-center pt-2">
+                <a
+                  href={`https://wa.me/51933667414?text=${encodeURIComponent("Hola AprendiendoTrading, tengo una consulta antes de inscribirme en el curso Gold Sniper Pro ($99 USD).")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-amber-300 hover:text-amber-200 underline font-medium inline-flex items-center gap-1.5"
+                >
+                  <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
+                  ¿Tienes dudas antes de pagar? Escríbenos por WhatsApp
+                </a>
+              </div>
+
             </form>
           </div>
         ) : (
@@ -259,7 +271,7 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
             <div className="my-6 p-4 rounded-2xl bg-[#080d17] border border-amber-500/30 text-left text-xs text-gray-300 space-y-2">
               <div className="font-bold text-amber-300 uppercase tracking-wide">Instrucciones Siguientes:</div>
               <div>1. Te hemos enviado los datos de acceso y confirmación a tu correo.</div>
-              <div>2. Haz clic en el botón abajo para coordinar la activación inmediata de tus <strong>3 Meses de Señales VIP en Exness</strong> por WhatsApp.</div>
+              <div>2. Haz clic en el botón abajo para coordinar la activación inmediata de tus <strong>meses de Señales VIP gratis en Exness</strong> por WhatsApp.</div>
             </div>
 
             <a

@@ -34,7 +34,7 @@ export default function CursoPage() {
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={() => setCheckoutOpen(true)}
-              className="w-full sm:w-auto px-8 py-4 rounded-full font-extrabold text-base text-black bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 shadow-xl shadow-amber-500/25 flex items-center justify-center gap-2 cursor-pointer transition-all"
+              className="w-full sm:w-auto px-8 py-4 rounded-full font-extrabold text-base text-[#060911] gold-btn-gradient shadow-xl shadow-[#dfb76c]/25 flex items-center justify-center gap-2 cursor-pointer transition-all"
             >
               Comprar Curso Completo — $99 USD
               <ArrowRight className="w-4 h-4" />
@@ -49,7 +49,7 @@ export default function CursoPage() {
               <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Indicador oficial para Exness incluido
             </span>
             <span className="flex items-center gap-1.5">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" /> 3 Meses de Señales VIP gratis
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Hasta 1 Año de Señales VIP en Exness
             </span>
           </div>
         </div>
@@ -87,10 +87,10 @@ export default function CursoPage() {
 
             <div className="space-y-2">
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-emerald-400" /> 3 Meses de Señales VIP de Oro
+                <CheckCircle2 className="w-5 h-5 text-emerald-400" /> Hasta 1 Año de Señales VIP de Oro
               </h3>
               <p className="text-gray-400 text-xs leading-relaxed pl-7">
-                Acceso gratuito por 90 días a nuestro canal privado de Telegram con entradas en vivo, Stop Loss estructural y dos objetivos de Take Profit.
+                Acceso gratuito de 2 meses a 1 año completo en nuestro canal privado de Telegram según tu depósito en Exness, con entradas en vivo, Stop Loss estructural y dos objetivos de Take Profit.
               </p>
             </div>
 
