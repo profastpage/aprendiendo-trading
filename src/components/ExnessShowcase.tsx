@@ -85,8 +85,8 @@ export default function ExnessShowcase() {
         
         {/* Main Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs font-semibold mb-4">
-            <Flame className="w-3.5 h-3.5 text-amber-400" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#dfb76c]/10 border border-[#dfb76c]/25 text-[#dfb76c] text-xs font-semibold mb-4">
+            <Flame className="w-3.5 h-3.5 text-[#dfb76c]" />
             <span>BRÓKER ASOCIADO OFICIAL</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
@@ -119,7 +119,7 @@ export default function ExnessShowcase() {
         {/* ======================================================== */}
         <div className="mb-28">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-mono uppercase tracking-widest text-amber-400 block mb-2">
+            <span className="text-xs font-mono uppercase tracking-widest text-[#dfb76c] block mb-2">
               ESCALERA DE VALOR EXCLUSIVA ACADEMIA
             </span>
             <h3 className="text-3xl sm:text-4xl font-extrabold text-white">
@@ -140,7 +140,7 @@ export default function ExnessShowcase() {
                   <span className="text-xs font-mono uppercase tracking-wider text-gray-400 font-bold">
                     NIVEL STARTER
                   </span>
-                  <span className="text-xs text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded font-bold">
+                  <span className="text-xs text-[#dfb76c] bg-amber-500/10 px-2 py-0.5 rounded font-bold">
                     2 Meses VIP
                   </span>
                 </div>
@@ -308,7 +308,7 @@ export default function ExnessShowcase() {
           
           <div className="space-y-3 group">
             <div className="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-              <Zap className="w-6 h-6 text-amber-400" />
+              <Zap className="w-6 h-6 text-[#dfb76c]" />
             </div>
             <h3 className="text-xl font-bold text-white tracking-tight">Retiros Instantáneos</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -329,7 +329,7 @@ export default function ExnessShowcase() {
 
           <div className="space-y-3 group">
             <div className="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-              <Clock className="w-6 h-6 text-amber-400" />
+              <Clock className="w-6 h-6 text-[#dfb76c]" />
             </div>
             <h3 className="text-xl font-bold text-white tracking-tight">Atención 24/7 en 14 Idiomas</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -349,7 +349,7 @@ export default function ExnessShowcase() {
 
           <div className="space-y-3 group">
             <div className="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-              <ShieldCheck className="w-6 h-6 text-amber-400" />
+              <ShieldCheck className="w-6 h-6 text-[#dfb76c]" />
             </div>
             <h3 className="text-xl font-bold text-white tracking-tight">Menos Deslizamiento (Slippage)</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -373,7 +373,7 @@ export default function ExnessShowcase() {
         <div className="mb-24">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-6 gap-2">
             <div>
-              <span className="text-xs font-mono uppercase tracking-widest text-amber-400 block mb-1">
+              <span className="text-xs font-mono uppercase tracking-widest text-[#dfb76c] block mb-1">
                 CONDICIONES DE MERCADO EN VIVO
               </span>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
@@ -400,7 +400,7 @@ export default function ExnessShowcase() {
                 {instruments.map((item, idx) => (
                   <tr key={idx} className="hover:bg-white/[0.02] transition-colors">
                     <td className="py-4 px-2 font-bold text-white flex items-center gap-2">
-                      <span className="font-mono text-amber-400">{item.symbol}</span>
+                      <span className="font-mono text-[#dfb76c]">{item.symbol}</span>
                       <span className="text-gray-400 text-xs font-normal hidden sm:inline">({item.name})</span>
                     </td>
                     <td className="py-4 px-4 text-gray-300 text-xs">{item.category}</td>
@@ -434,7 +434,7 @@ export default function ExnessShowcase() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-8 rounded-3xl bg-[#090e1c] border border-white/5 space-y-3">
-              <Monitor className="w-8 h-8 text-amber-400 mb-2" />
+              <Monitor className="w-8 h-8 text-[#dfb76c] mb-2" />
               <h4 className="text-lg font-bold text-white">MetaTrader 5</h4>
               <p className="text-gray-400 text-xs leading-relaxed">
                 El estándar institucional con gráficos avanzados, profundidad de mercado (DOM), ejecución por milisegundos y soporte de Expert Advisors (EAs).
@@ -442,10 +442,10 @@ export default function ExnessShowcase() {
             </div>
 
             <div className="p-8 rounded-3xl bg-[#090e1c] border border-amber-500/20 space-y-3 relative overflow-hidden">
-              <div className="absolute top-3 right-3 text-[10px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded font-mono font-bold">
+              <div className="absolute top-3 right-3 text-[10px] bg-amber-500/20 text-[#dfb76c] px-2 py-0.5 rounded font-mono font-bold">
                 RECOMENDADO
               </div>
-              <Globe2 className="w-8 h-8 text-amber-400 mb-2" />
+              <Globe2 className="w-8 h-8 text-[#dfb76c] mb-2" />
               <h4 className="text-lg font-bold text-white">Terminal Web de Exness</h4>
               <p className="text-gray-400 text-xs leading-relaxed">
                 Opera directamente en tu navegador sin instalar nada. Incluye soporte para el lenguaje <strong>Indie (Python)</strong> donde compartimos nuestro indicador exclusivo.

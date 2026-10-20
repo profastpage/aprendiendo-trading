@@ -52,12 +52,12 @@ export default function Home() {
       <section className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="mb-6 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
           <div>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs font-semibold mb-2">
-              <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#dfb76c]/10 border border-[#dfb76c]/25 text-[#dfb76c] text-xs font-semibold mb-2">
+              <Sparkles className="w-3.5 h-3.5 text-[#dfb76c]" />
               <span>TERMINAL DE ANÁLISIS EN VIVO</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-white flex items-center gap-2">
-              <BarChart3 className="w-6 h-6 text-amber-400" />
+              <BarChart3 className="w-6 h-6 text-[#dfb76c]" />
               Gráfico Institucional de Oro (XAU/USD) en Tiempo Real
             </h2>
           </div>

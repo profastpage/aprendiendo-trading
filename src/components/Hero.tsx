@@ -62,8 +62,8 @@ export default function Hero({ onOpenCheckout, onScrollToExness }: HeroProps) {
           {/* Left Column: Value Proposition */}
           <div className="lg:col-span-7 text-center lg:text-left">
             {/* Top Badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/25 text-amber-300 text-xs font-semibold mb-4 sm:mb-6 shadow-sm backdrop-blur-sm">
-              <Flame className="w-3.5 h-3.5 text-amber-400" />
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#dfb76c]/10 border border-[#dfb76c]/30 text-[#dfb76c] text-xs font-semibold mb-4 sm:mb-6 shadow-sm backdrop-blur-sm">
+              <Flame className="w-3.5 h-3.5 text-[#dfb76c]" />
               <span>ACADEMIA INSTITUCIONAL • ESPECIALISTAS EN XAU/USD</span>
             </div>
 
@@ -87,7 +87,7 @@ export default function Hero({ onOpenCheckout, onScrollToExness }: HeroProps) {
             {/* Key Value Points (Compact badges) */}
             <div className="mt-4 sm:mt-6 flex flex-wrap items-center justify-center lg:justify-start gap-y-2 gap-x-4 sm:gap-x-6 text-xs sm:text-sm text-gray-300">
               <div className="flex items-center gap-1.5 sm:gap-2">
-                <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#dfb76c] flex-shrink-0" />
                 <span>Curso Vitalicio ($99 USD)</span>
               </div>
               <div className="flex items-center gap-1.5 sm:gap-2">
@@ -95,7 +95,7 @@ export default function Hero({ onOpenCheckout, onScrollToExness }: HeroProps) {
                 <span>Hasta 1 Año VIP Gratis (Exness)</span>
               </div>
               <div className="flex items-center gap-1.5 sm:gap-2">
-                <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#dfb76c] flex-shrink-0" />
                 <span>Indicador Incluido</span>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function Hero({ onOpenCheckout, onScrollToExness }: HeroProps) {
                 <div className="flex items-center justify-between pb-3 sm:pb-4 border-b border-gray-800">
                   <div className="flex items-center gap-2 sm:gap-2.5">
                     <div className="w-8 h-8 rounded-lg bg-amber-500/20 flex items-center justify-center border border-amber-500/40">
-                      <BarChart3 className="w-4 h-4 text-amber-400" />
+                      <BarChart3 className="w-4 h-4 text-[#dfb76c]" />
                     </div>
                     <div>
                       <div className="text-xs sm:text-sm font-bold text-white flex items-center gap-1.5">
@@ -190,7 +190,7 @@ export default function Hero({ onOpenCheckout, onScrollToExness }: HeroProps) {
                     </div>
                     <div>
                       <span className="text-gray-400 block text-[10px]">Take Profit Final:</span>
-                      <span className="font-mono text-amber-400 font-bold text-xs">4,130.00</span>
+                      <span className="font-mono text-[#dfb76c] font-bold text-xs">4,130.00</span>
                     </div>
                   </div>
 
@@ -210,11 +210,11 @@ export default function Hero({ onOpenCheckout, onScrollToExness }: HeroProps) {
                 {/* Strategy Snapshot Points */}
                 <div className="space-y-1.5 sm:space-y-2 text-xs text-gray-300">
                   <div className="flex items-center gap-2">
-                    <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-400 flex-shrink-0" />
+                    <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#dfb76c] flex-shrink-0" />
                     <span className="text-[11px] sm:text-xs">Stop Loss estructural inamovible (cero margen de quiebre).</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-400 flex-shrink-0" />
+                    <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#dfb76c] flex-shrink-0" />
                     <span className="text-[11px] sm:text-xs">Cierre del 50% automático a los 50 pips.</span>
                   </div>
                   <div className="flex items-center gap-2">

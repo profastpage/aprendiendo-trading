@@ -26,28 +26,28 @@ export default function BottomNav({ onOpenCheckout }: BottomNavProps) {
         {onOpenCheckout ? (
           <button
             onClick={onOpenCheckout}
-            className="flex flex-col items-center justify-center gap-1 text-gray-400 hover:text-amber-400 transition-colors py-1 cursor-pointer"
+            className="flex flex-col items-center justify-center gap-1 text-gray-400 hover:text-[#dfb76c] transition-colors py-1 cursor-pointer"
           >
-            <BookOpen className="w-5 h-5 text-amber-400" />
-            <span className="text-[10px] font-semibold text-amber-400 tracking-tight">Curso $99</span>
+            <BookOpen className="w-5 h-5 text-[#dfb76c]" />
+            <span className="text-[10px] font-semibold text-[#dfb76c] tracking-tight">Curso $99</span>
           </button>
         ) : (
           <Link
             href="/curso"
-            className="flex flex-col items-center justify-center gap-1 text-gray-400 hover:text-amber-400 transition-colors py-1"
+            className="flex flex-col items-center justify-center gap-1 text-gray-400 hover:text-[#dfb76c] transition-colors py-1"
           >
-            <BookOpen className="w-5 h-5 text-amber-400" />
-            <span className="text-[10px] font-semibold text-amber-400 tracking-tight">Curso $99</span>
+            <BookOpen className="w-5 h-5 text-[#dfb76c]" />
+            <span className="text-[10px] font-semibold text-[#dfb76c] tracking-tight">Curso $99</span>
           </Link>
         )}
 
-        {/* Item 3: Bróker */}
+        {/* Item 3: Señales VIP & Bróker */}
         <Link
           href="/broker"
-          className="flex flex-col items-center justify-center gap-1 text-gray-400 hover:text-amber-300 transition-colors py-1"
+          className="flex flex-col items-center justify-center gap-1 text-gray-400 hover:text-[#dfb76c] transition-colors py-1"
         >
-          <Flame className="w-5 h-5 text-amber-400 animate-pulse" />
-          <span className="text-[10px] font-medium tracking-tight">Exness VIP</span>
+          <Flame className="w-5 h-5 text-[#dfb76c] animate-pulse" />
+          <span className="text-[10px] font-medium tracking-tight text-[#dfb76c]">Señales VIP</span>
         </Link>
 
         {/* Item 4: Calculadora */}

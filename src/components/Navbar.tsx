@@ -93,14 +93,14 @@ export default function Navbar({ onOpenCheckout, onScrollToExness }: NavbarProps
             
             {/* Brand Logo */}
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-300 via-amber-500 to-amber-700 flex items-center justify-center shadow-lg shadow-amber-500/25 border border-amber-300/30 group-hover:scale-105 transition-transform">
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#f9f1df] via-[#dfb76c] to-[#b88a38] flex items-center justify-center shadow-lg shadow-[#dfb76c]/20 border border-[#dfb76c]/40 group-hover:scale-105 transition-transform">
                 <Landmark className="w-5 h-5 text-[#060911] stroke-[2.4]" />
               </div>
               <div>
                 <span className="text-lg sm:text-xl font-extrabold tracking-tight text-white flex items-center gap-1">
-                  Aprendiendo<span className="text-amber-400">Trading</span>
+                  Aprendiendo<span className="text-[#dfb76c]">Trading</span>
                 </span>
-                <span className="text-[9px] tracking-[0.2em] uppercase text-gray-400 font-bold block -mt-1">
+                <span className="text-[9px] tracking-[0.2em] uppercase text-[#dfb76c]/80 font-bold block -mt-1">
                   OPERATIVA INSTITUCIONAL
                 </span>
               </div>
@@ -108,18 +108,18 @@ export default function Navbar({ onOpenCheckout, onScrollToExness }: NavbarProps
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300">
-              <Link href="/#estrategia" className="hover:text-amber-400 transition-colors">
+              <Link href="/#estrategia" className="hover:text-[#dfb76c] transition-colors">
                 Estrategia
               </Link>
-              <Link href="/curso" className="hover:text-amber-400 transition-colors">
+              <Link href="/curso" className="hover:text-[#dfb76c] transition-colors">
                 Curso $99
               </Link>
-              <Link href="/#calculadora" className="hover:text-amber-400 transition-colors">
+              <Link href="/#calculadora" className="hover:text-[#dfb76c] transition-colors">
                 Calculadora
               </Link>
-              <Link href="/broker" className="hover:text-amber-400 transition-colors flex items-center gap-1.5 text-amber-300">
-                <Flame className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
-                Bróker Exness & VIP
+              <Link href="/broker" className="hover:text-[#dfb76c] transition-colors flex items-center gap-1.5 text-[#dfb76c]">
+                <Flame className="w-3.5 h-3.5 text-[#dfb76c] animate-pulse" />
+                Bróker & Señales VIP
               </Link>
               <Link href="/#faq" className="hover:text-gray-100 transition-colors">
                 Preguntas
@@ -131,14 +131,14 @@ export default function Navbar({ onOpenCheckout, onScrollToExness }: NavbarProps
               {onScrollToExness ? (
                 <button
                   onClick={onScrollToExness}
-                  className="text-xs font-semibold text-amber-300 hover:text-amber-200 transition-colors cursor-pointer"
+                  className="text-xs font-semibold text-[#dfb76c] hover:text-[#f3e2ba] transition-colors cursor-pointer"
                 >
                   Planes VIP
                 </button>
               ) : (
                 <Link
                   href="/broker"
-                  className="text-xs font-semibold text-amber-300 hover:text-amber-200 transition-colors"
+                  className="text-xs font-semibold text-[#dfb76c] hover:text-[#f3e2ba] transition-colors"
                 >
                   Planes VIP
                 </Link>
@@ -170,7 +170,7 @@ export default function Navbar({ onOpenCheckout, onScrollToExness }: NavbarProps
                 className="p-2.5 rounded-xl bg-white/5 border border-white/10 text-gray-300 hover:text-white hover:bg-white/10 focus:outline-none transition-colors cursor-pointer"
                 aria-label="Abrir Menú"
               >
-                <Menu className="w-6 h-6 text-amber-400" />
+                <Menu className="w-6 h-6 text-[#dfb76c]" />
               </button>
             </div>
 
@@ -199,14 +199,14 @@ export default function Navbar({ onOpenCheckout, onScrollToExness }: NavbarProps
               {/* Drawer Header */}
               <div className="flex items-center justify-between pb-6 border-b border-white/10">
                 <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-300 via-amber-500 to-amber-700 flex items-center justify-center border border-amber-300/30">
+                  <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#f9f1df] via-[#dfb76c] to-[#b88a38] flex items-center justify-center border border-[#dfb76c]/40">
                     <Landmark className="w-5 h-5 text-[#060911] stroke-[2.4]" />
                   </div>
                   <div>
                     <span className="text-base font-extrabold text-white">
-                      Aprendiendo<span className="text-amber-400">Trading</span>
+                      Aprendiendo<span className="text-[#dfb76c]">Trading</span>
                     </span>
-                    <span className="text-[8px] uppercase tracking-[0.2em] text-gray-400 font-bold block">
+                    <span className="text-[8px] uppercase tracking-[0.2em] text-[#dfb76c]/80 font-bold block">
                       OPERATIVA INSTITUCIONAL
                     </span>
                   </div>
@@ -229,7 +229,7 @@ export default function Navbar({ onOpenCheckout, onScrollToExness }: NavbarProps
                   onClick={closeDrawer}
                   className="flex items-center gap-3 px-4 py-3 rounded-2xl text-gray-300 hover:text-white hover:bg-white/5 transition-colors font-medium text-sm"
                 >
-                  <TrendingUp className="w-4 h-4 text-amber-400" />
+                  <TrendingUp className="w-4 h-4 text-[#dfb76c]" />
                   Estrategia Institucional
                 </Link>
 
@@ -238,17 +238,17 @@ export default function Navbar({ onOpenCheckout, onScrollToExness }: NavbarProps
                   onClick={closeDrawer}
                   className="flex items-center gap-3 px-4 py-3 rounded-2xl text-gray-300 hover:text-white hover:bg-white/5 transition-colors font-medium text-sm"
                 >
-                  <BookOpen className="w-4 h-4 text-amber-400" />
+                  <BookOpen className="w-4 h-4 text-[#dfb76c]" />
                   Curso Completo ($99 USD)
                 </Link>
 
                 <Link
                   href="/broker"
                   onClick={closeDrawer}
-                  className="flex items-center gap-3 px-4 py-3 rounded-2xl text-amber-300 bg-amber-500/10 border border-amber-500/20 font-semibold text-sm"
+                  className="flex items-center gap-3 px-4 py-3 rounded-2xl text-[#dfb76c] bg-[#dfb76c]/10 border border-[#dfb76c]/25 font-semibold text-sm"
                 >
-                  <Flame className="w-4 h-4 text-amber-400" />
-                  Bróker Exness & Planes VIP
+                  <Flame className="w-4 h-4 text-[#dfb76c]" />
+                  Bróker & Señales VIP
                 </Link>
 
                 <Link

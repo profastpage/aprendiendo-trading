@@ -10,7 +10,7 @@ export default function StrategyBreakdown() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="text-xs font-mono uppercase tracking-widest text-amber-400 block mb-2">
+          <span className="text-xs font-mono uppercase tracking-widest text-[#dfb76c] block mb-2">
             LA REALIDAD DEL MERCADO DE ORO
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
@@ -27,19 +27,19 @@ export default function StrategyBreakdown() {
           
           {/* Pillar 1 */}
           <div className="space-y-4 group">
-            <div className="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-              <Crosshair className="w-6 h-6 text-amber-400" />
+            <div className="w-12 h-12 rounded-2xl bg-[#dfb76c]/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <Crosshair className="w-6 h-6 text-[#dfb76c]" />
             </div>
             <div className="flex items-center justify-between">
               <h3 className="text-xl font-bold text-white tracking-tight">
                 1. Cazar los Barridos
               </h3>
-              <span className="text-[11px] text-amber-400 font-mono font-bold">BSL / SSL</span>
+              <span className="text-[11px] text-[#dfb76c] font-mono font-bold">BSL / SSL</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               La masa compra en la ruptura de un máximo creyendo que es una tendencia. Las instituciones utilizan esa euforia para tomar contrapartida y girar el precio.
             </p>
-            <div className="pt-2 text-xs text-amber-300 font-medium">
+            <div className="pt-2 text-xs text-[#dfb76c] font-medium">
               ⚡ <strong>Regla Institucional:</strong> Entramos únicamente cuando el barrido concluye y la vela cierra de vuelta adentro del rango.
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function StrategyBreakdown() {
           </div>
           <a
             href="/curso"
-            className="px-6 py-3 rounded-full font-bold text-xs text-black bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 shadow-md shadow-amber-500/20 whitespace-nowrap"
+            className="px-6 py-3 rounded-full font-bold text-xs text-black gold-btn-gradient shadow-md shadow-amber-500/20 whitespace-nowrap"
           >
             Ver Programa Completo ($99 USD)
           </a>

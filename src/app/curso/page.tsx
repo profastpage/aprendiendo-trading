@@ -18,8 +18,8 @@ export default function CursoPage() {
       {/* Hero Header */}
       <section className="pt-36 pb-20 relative overflow-hidden">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs font-semibold mb-6">
-            <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#dfb76c]/10 border border-[#dfb76c]/25 text-[#dfb76c] text-xs font-semibold mb-6">
+            <Sparkles className="w-3.5 h-3.5 text-[#dfb76c]" />
             <span>CERTIFICACIÓN INSTITUCIONAL DE TRADING</span>
           </div>
 
